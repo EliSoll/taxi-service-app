@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple steps:
 2. Download and install the JDK, servlet container (Apache Tomcat or other).
 3. Download and install MySQL Server and optional - MySQL Workbench.
 4. Create the schema and tables in MySql. Use data from src/main/resources/init_db.sql.
-5. Configure URL, USERNAME, PASSWORD and JDBC_DRIVER properties with the corresponding values for your DB's connection.
+5. Configure ```URL```, ```USERNAME```, ```PASSWORD``` and ```JDBC_DRIVER``` properties with the corresponding values for your DB's connection.
 6. Build the project using Maven: 
  ```sh
   mvn clean install
@@ -47,30 +47,39 @@ To get a local copy up and running follow these simple steps:
 
 ## Structure
 
-- Controllers: 
-1. LoginController - authentication of users.
-2. LogoutController - log out for users and invalidation of http session.
-3. IndexController - homepage of app.
-4. AddCarController - adds a new car.
-5. AddDriverToCarController - adds a driver to car by carID.
-6. DeleteCarController - deletes certain car.
-7. GetAllCarsController - views all cars.
-8. AddDriverController - adds a driver.
-9. DeleteDriverController - deletes driver.
-10. GetAllDriversController - views all drivers.
-11. GetMyCurrentCarsController - views all cars for the current driver.
-12. AddManufacturersController - adds new manufacturer.
-13. DeleteManufacturerController - deletes manufacturer.
-14. GetAllManufacturersController - views all manufacturers.
-- DAO Layer: DAOt interfaces with implementations.
-- Filter: Servlet Filters used to pre- and postproccesing requests and responses.
-- Model: data from app.
-- Service layer: Service interfaces with implementations that perform business logic.
-- Util: Utility classes. 
-- Resources: db's scripts, config files.
-- Webapp: CSS, JSP pages.
-- WEB-INF: config files for the web application.
-- Views: all JSP files used as views in the application with css style file.
+ <ol>1. Controllers:
+  <ul>1. LoginController - authentication of users.</ul>
+  <ul>2. LogoutController - log out for users and invalidation of http session.</ul>
+  <ul>3. IndexController - homepage of app.</ul>
+  <ul>4. AddCarController - adds a new car.</ul>
+<ul>5. AddDriverToCarController - adds a driver to car by carID.</ul>
+<ul>6. DeleteCarController - deletes certain car.</ul>
+<ul>7. GetAllCarsController - views all cars.</ul>
+<ul>8. AddDriverController - adds a driver.</ul>
+<ul>9. DeleteDriverController - deletes driver.</ul>
+<ul>10. GetAllDriversController - views all drivers.</ul>
+<ul>11. GetMyCurrentCarsController - views all cars for the current driver.</ul>
+<ul>12. AddManufacturersController - adds new manufacturer.</ul>
+<ul>13. DeleteManufacturerController - deletes manufacturer.</ul>
+<ul>14. GetAllManufacturersController - views all manufacturers.</ul></ol>
+
+2. DAO Layer: DAOt interfaces with implementations.
+
+3. Filter: Servlet Filters used to pre- and postproccesing requests and responses.
+
+4. Model: data from app.
+
+5. Service layer: Service interfaces with implementations that perform business logic.
+
+6. Util: Utility classes. 
+
+7. Resources: db's scripts, config files.
+
+8. Webapp: CSS, JSP pages.
+
+9. WEB-INF: config files for the web application.
+
+10. Views: all JSP files used as views in the application with css style file.
 
 ## Features
 1. User's authentication and log out.
