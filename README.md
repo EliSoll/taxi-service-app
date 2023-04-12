@@ -62,24 +62,23 @@ To get a local copy up and running follow these simple steps:
 <ul>12. AddManufacturersController - adds new manufacturer.</ul>
 <ul>13. DeleteManufacturerController - deletes manufacturer.</ul>
 <ul>14. GetAllManufacturersController - views all manufacturers.</ul></ol>
+ <ol>2. DAO Layer: DAOt interfaces with implementations.</ol>
 
-2. DAO Layer: DAOt interfaces with implementations.
+ <ol>3. Filter: Servlet Filters used to pre- and postproccesing requests and responses.</ol>
 
-3. Filter: Servlet Filters used to pre- and postproccesing requests and responses.
+ <ol>4. Model: data from app.</ol>
 
-4. Model: data from app.
+ <ol>5. Service layer: Service interfaces with implementations that perform business logic.</ol>
 
-5. Service layer: Service interfaces with implementations that perform business logic.
+ <ol>6. Util: Utility classes. </ol>
 
-6. Util: Utility classes. 
+ <ol>7. Resources: db's scripts, config files.</ol>
 
-7. Resources: db's scripts, config files.
+ <ol>8. Webapp: CSS, JSP pages.</ol>
 
-8. Webapp: CSS, JSP pages.
+ <ol>9. WEB-INF: config files for the web application.</ol>
 
-9. WEB-INF: config files for the web application.
-
-10. Views: all JSP files used as views in the application with css style file.
+ <ol>10. Views: all JSP files used as views in the application with css style file.</ol>
 
 ## Features
 1. User's authentication and log out.
